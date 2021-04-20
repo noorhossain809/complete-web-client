@@ -23,7 +23,7 @@ const BookingForm = ({modalIsOpen, closeModal, bookOn, booking}) => {
              data.price = booking;
 
 
-        fetch('http://localhost:5001/addBooking', {
+        fetch('https://sleepy-atoll-80753.herokuapp.com/addBooking', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(data)

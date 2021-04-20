@@ -4,12 +4,18 @@ import React, { useEffect, useState } from 'react';
 const ServiceManageCard = () => {
     const [serviceData, setServiceData] = useState([])
 
-    // const handleDelete = (e) => {
-    //     console.log(e)
-    // }
+    const deleteEvent = id => {
+        fetch(`https://sleepy-atoll-80753.herokuapp.com/deleteEvent/${id}`,{
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log( result,'deleted successfully')
+        })
+   }
 
     useEffect(() => {
-        fetch('http://localhost:5001/services')
+        fetch('https://sleepy-atoll-80753.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServiceData(data))
     }, [])
@@ -38,7 +44,7 @@ const ServiceManageCard = () => {
 
 
                                     <td>
-                                        <button >delete</button>
+                                        <button onClick={() => deleteEvent(book._id)}>delete</button>
                                     </td>
                                 </tr>
                             </tbody>

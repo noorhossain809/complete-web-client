@@ -5,7 +5,8 @@ import { UserContext } from '../../../App';
 
 import BookingForm from '../../Appointment/BookingForm/BookingForm';
 
-const ServiceDetail = ({service}) => {
+const ServiceDetail = 
+({service}) => {
   console.log(service)
   const [loggedInUser, setLoggedInUser] = useContext(UserContext)
   console.log(loggedInUser)
@@ -23,7 +24,7 @@ const ServiceDetail = ({service}) => {
         console.log(newBooking)
 
 
- fetch('http://localhost:5001/addBooking', {
+ fetch('https://sleepy-atoll-80753.herokuapp.com/addBooking', {
      method: 'POST',
      headers: {'content-type': 'application/json'},
      body: JSON.stringify(newBooking)

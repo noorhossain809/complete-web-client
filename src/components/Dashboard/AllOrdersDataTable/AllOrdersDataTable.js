@@ -4,7 +4,7 @@ const AllOrdersDataTable = ({ orders }) => {
 
     const handleChange = (e, id) => {
         console.log(e.target.value)
-        fetch(`http://localhost:5001/update/${id}`, {
+        fetch(`https://sleepy-atoll-80753.herokuapp.com/update/${id}`, {
             method: "PATCH",
             headers: {'content-type': 'application/json; charset=UTF-8'},
             body: JSON.stringify({ status: e.target.value})

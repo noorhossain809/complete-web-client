@@ -23,7 +23,7 @@ const TestimonialForm = () => {
         formData.append('email', info.email)
         formData.append('description', info.description)
 
-        fetch('http://localhost:5001/addATestimonial', {
+        fetch('https://sleepy-atoll-80753.herokuapp.com/addATestimonial', {
             method: 'POST',
             body: formData
         })

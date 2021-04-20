@@ -10,7 +10,7 @@ const BookingList = () => {
    
 
         useEffect( () => {
-            fetch('http://localhost:5001/bookings', {
+            fetch('https://sleepy-atoll-80753.herokuapp.com/bookings', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({email:loggedInUser.email})

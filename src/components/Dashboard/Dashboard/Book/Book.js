@@ -13,7 +13,7 @@ const Book = () => {
 
     // const handlePaymentSuccess = paymentId => {
     //     useEffect(() => {
-    //         fetch(`http://localhost:5001/service/${id}`,{
+    //         fetch(`https://sleepy-atoll-80753.herokuapp.com/service/${id}`,{
 
     //         })
     //             .then(res => res.json())
@@ -22,7 +22,7 @@ const Book = () => {
     // }
 
     useEffect(() => {
-        fetch(`http://localhost:5001/service/${id}`)
+        fetch(`https://sleepy-atoll-80753.herokuapp.com/service/${id}`)
             .then(res => res.json())
             .then(data => setSelected(data))
     }, [id]);
