@@ -1,39 +1,16 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
  import Testimonial from '../Testimonial/Testimonial';
-import apron from '../../../images/image/alex-simpson-hC8c4K_Ckfs-unsplash.jpg';
-import cleaningStuff from '../../../images/image/cdc-F98Mv9O6LfI-unsplash.jpg';
-import cleanerStuff from '../../../images/image/jeshoots-com-__ZMnefoI3k-unsplash.jpg'
-
 import './Testimonials.css'
 
 
-const testimonialData = [
-    {
-        title : 'Cleaning House',
-        description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
-        cleaner:'Dr. Cudi',
-        img : apron,
-        date : '23 April 2019'
-    },
-    {
-        title : 'Cleaning Kitchen',
-        description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
-        cleaner:'Dr. Sinthia',
-        img : cleaningStuff,
-        date : '23 April 2019'
-    },
-    {
-        title : 'Cleaning Wash',
-        description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
-        cleaner:'Dr. Cudi',
-        img : cleanerStuff,
-        date : '23 April 2019'
-    },
-]
-
 
 const Testimonials = () => {
+    const [testimonialData, setTestimonialData] = useState([])
+    useEffect( () => {
+        fetch('http://localhost:5001/testimonial')
+        .then(res => res.json())
+        .then(data => setTestimonialData(data))
+    }, [])
     return (
         
         <section className="blogs">

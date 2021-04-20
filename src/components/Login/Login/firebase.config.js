@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCWzp0C6XOVyExTcOJQWV8sJgYpvUb8Kpc",
-    authDomain: "dry-cleaning-3cb2e.firebaseapp.com",
-    projectId: "dry-cleaning-3cb2e",
-    storageBucket: "dry-cleaning-3cb2e.appspot.com",
-    messagingSenderId: "967879005325",
-    appId: "1:967879005325:web:ec4c2b3caf4ab79b7dfec4"
-  };
+  apiKey: "AIzaSyCWCPiotFUnfwBPz0ptHB6stEO4B8B-E1s",
+  authDomain: "day-wash-auth.firebaseapp.com",
+  projectId: "day-wash-auth",
+  storageBucket: "day-wash-auth.appspot.com",
+  messagingSenderId: "628745265025",
+  appId: "1:628745265025:web:36820489be09b62c079280"
+};
   export default firebaseConfig;

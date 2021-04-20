@@ -1,32 +1,16 @@
-import React from 'react';
-import laundry from '../../../images/household (1).png';
-import cleaning from '../../../images/cleaning (1).png';
-import suit from '../../../images/housewash.png';
+import React, { useEffect, useState } from 'react';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 
-const serviceData = [
-    {
-        name: 'WE PICK YOUR CLOTHES',
-        price: '130',
-        img: laundry,
-        description: 'The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!'
-    },
-    {
-        name: 'DELIVERY AT THE DOORSTEP!',
-        price: '150',
-        img: cleaning,
-        description: 'We ensure delivery in the quickest of the turnaround time in the industry. Superior quality of service with speed!'
-    },
-    {
-        name: 'QUICKER DELIVERY',
-        price: '200',
-        img: suit,
-        description: 'We have pioneered the concept of pickup and delivery in the shortest possible time. We intend keeping it that way!'
-    },
-]
+
 
 const Services = () => {
+    const [serviceData, setServiceData] = useState([])
+    useEffect( () => {
+        fetch('http://localhost:5001/services')
+        .then(res => res.json())
+        .then(data => setServiceData(data))
+    }, [])
     return (
         <section>
             <div className="text-center">

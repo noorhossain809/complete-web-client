@@ -5,8 +5,8 @@ const Navbar = () => {
     return (
        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-         
+        <div style={{height:'75px'}} class="container-fluid bg-danger">
+        <h2 className="text-white text-uppercase">Dry Clean</h2>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -16,17 +16,16 @@ const Navbar = () => {
                 <a class="nav-link active ms-5" aria-current="page" href="/home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active ms-5" href="/about">About</a>
+                <a class="nav-link active ms-5" href="/dashboard">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active ms-5 " href="/services">Services</a>
+                <a class="nav-link active ms-5" href="/admin">Admin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active ms-5" href="/reviews">Reviews</a>
+                <a class="nav-link active ms-5 " href="/login">Login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active ms-5" href="/blogs">Blogs</a>
-              </li>
+              
+              
 
               
             </ul>
