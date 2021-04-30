@@ -44,7 +44,7 @@ const ServiceManageCard = () => {
 
 
                                     <td>
-                                        <button onClick={() => deleteEvent(book._id)}>delete</button>
+                                        <button onClick={() => deleteEvent(manageService._id)}>delete</button>
                                     </td>
                                 </tr>
                             </tbody>

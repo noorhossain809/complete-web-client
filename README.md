@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Create dry-cleaning Website by React & Node.js
+
+*** `Website Link`:
+
+[https://day-wash-auth.web.app/]
+
+
+ ## Features 
+
+ => Login Authentication (Private Route) 
+
+ => Admin Panel (Make Admin, Add Service, Delete Service) 
+
+ => Dashboard (Book with Payment Method, Review ) 
+
+ ## Framework
+ => Bootstrap, font-awesome, CSS
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +86,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
